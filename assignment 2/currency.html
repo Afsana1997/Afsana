@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Currency Converter</title>
+
+<h1 style="background-color:#EBDEF0 ;" >Currency Exchange</h1>
+
+<p style="background-color:#F3E194;">Here Create a Web page that can be used to convert some value in one currency to the respective values of the other currencies.Inserting a number in one of the fields, this number, taken as the respective value of the currency, be converted to the values of the other currencies.</p>
+
+<script language="JavaScript">
+<!--
+function euroConverter(){
+document.converter.dollar.value = document.converter.euro.value * 1.470
+document.converter.pound.value = document.converter.euro.value * 0.717
+document.converter.yen.value = document.converter.euro.value * 165.192
+document.converter.slr.value = document.converter.euro.value * 196.53
+}
+function dollarConverter(){
+document.converter.euro.value = document.converter.dollar.value * 0.680
+document.converter.pound.value = document.converter.dollar.value * 0.488
+document.converter.yen.value = document.converter.dollar.value * 112.36
+document.converter.slr.value = document.converter.dollar.value * 181.46
+}
+function poundConverter(){
+document.converter.dollar.value = document.converter.pound.value * 2.049
+document.converter.euro.value = document.converter.pound.value * 1.394
+document.converter.yen.value = document.converter.pound.value * 230.27
+document.converter.slr.value = document.converter.pound.value * 236.75
+}
+function yenConverter(){
+document.converter.dollar.value = document.converter.yen.value * 0.0089
+document.converter.pound.value = document.converter.yen.value * 0.00434
+document.converter.euro.value = document.converter.yen.value * 0.00605
+document.converter.slr.value = document.converter.yen.value * 1.65
+}
+
+function slrConverter(){
+document.converter.dollar.value = document.converter.slr.value * 0.0055
+document.converter.pound.value = document.converter.slr.value * 0.0042
+document.converter.euro.value = document.converter.slr.value *  0.0051
+document.converter.yen.value = document.converter.slr.value *  0.61
+}
+
+</script>
+
+<body style="background-color:#ACFA58">
+
+<form name="converter">
+<table border="0">
+<tr>
+<td>Euro: </td><td><input type="text" name="euro" onChange="euroConverter()" /></td>
+</tr>
+<tr>
+<td>US Dollar: </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+</tr>
+<tr>
+<td>British Pound:</td><td><input type="text" name="pound" onChange="poundConverter()" /></td>
+</tr>
+<tr>
+<td>Japanese Yen: </td><td><input type="text" name="yen" onChange="yenConverter()" /></td>
+</tr>
+<tr>
+<td>Srilinka: </td><td><input type="text" name="slr" onChange="slrConverter()" /></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="button" value="Convert!" /></td>
+</tr>
+</table>
+</form>
+
+</head>
+</body>
+</html>
