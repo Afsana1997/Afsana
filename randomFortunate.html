@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random info</title>
+</head>
+
+<body>
+
+ <p id="arry"></p>
+    <button onclick="myfunction()">click here</button>
+    <script>
+        function myfunction(){
+            var que=["hi","hello"];
+           var randomvalue=Math.floor(Math.random() * 2); 
+            document.getElementById('arry').innerHTML=que[randomvalue];
+        }
+    </script>
+
+</body>
+</html>
